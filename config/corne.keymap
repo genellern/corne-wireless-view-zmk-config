@@ -45,5 +45,14 @@
                                  &kp SPACE      &kp ENTER       &kp LCTRL       &kp LEFT_GUI       &trans            &trans
                         >;
                 };
+
+                reset_layer {
+                        bindings = <
+        &trans        &kp F1     &kp F2         &kp F3          &kp F4          &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp K_MUTE    &kp K_PLAY_PAUSE  &kp GRAVE  &kp LCTRL       &mo 1
+        &mo 0         &kp F5     &kp F6         &kp F7          &kp F8          &kp C_PREVIOUS     &kp K_NEXT        &kp LBRC      &kp RBRC          &kp PIPE   &kp TILDE       &trans
+        &kp LSHFT     &kp F9     &kp F10        &kp F11         &kp F12         &trans             &trans            &trans        &trans            &trans     &trans          &trans
+                                 &kp SPACE      &kp ENTER       &kp LCTRL       &kp LEFT_GUI       &trans            &C_RESET
+                        >;
+                };
         };
 };
