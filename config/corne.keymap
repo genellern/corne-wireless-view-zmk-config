@@ -14,7 +14,28 @@
 #define RESET 3
 
 / {
-        keymap {
+macros {
+    this: this_macro {
+        label = this;
+        compatible = "zmk,behavior-macro";
+        tap-ms = <1>; 
+        wait-ms = <1>;
+        #binding-cells = <0>;
+        bindings = <&kp DOLLAR &kp T &kp H &kp I &kp S &kp KP_MINUS &kp GT>;
+    };
+};
+
+
+combos {
+        compatible = "zmk,combos";
+        this_combo {
+            timeout-ms = <50>;
+            key-positions = <3>;
+            bindings = <&this>;
+        };
+};
+
+keymap {
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
