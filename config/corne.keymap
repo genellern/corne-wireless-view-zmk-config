@@ -15,8 +15,8 @@
 
 / {
 macros {
-    this: this_macro {
-        label = this;
+    this_macro: this_macro {
+        label = this_macro;
         compatible = "zmk,behavior-macro";
         tap-ms = <1>; 
         wait-ms = <1>;
@@ -31,7 +31,7 @@ combos {
         this_combo {
             timeout-ms = <50>;
             key-positions = <3>;
-            bindings = <&this>;
+            bindings = < &this_macro >;
         };
 };
 
