@@ -25,7 +25,7 @@
                 se-colon {
                         timeout-ms = <250>;
                         key-positions = <3 4>;
-                        bindings = <&kp END &kp SEMI>;
+                        bindings = <&kp END &kp SEMICOLON>;
                 };
         };
 
