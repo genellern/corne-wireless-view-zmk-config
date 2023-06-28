@@ -16,6 +16,7 @@
 / {
         macros {
                 this_macro: this_macro {
+                        label = "this_macro";
                         compatible = "zmk,behavior-macro";
                         tap-ms = <1>; 
                         wait-ms = <1>;
