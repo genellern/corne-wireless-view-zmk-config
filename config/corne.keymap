@@ -57,7 +57,7 @@
         &trans          &kp N1          &kp N2         &kp N3        &kp DOT             &kp AMPS           &trans               &kp MINUS                &kp STAR          &kp FSLH              &kp PIPE        &to 2
         &to 0           &kp N4          &kp N5         &kp N6        &kp N0              &kp TILDE          &kp UP_ARROW         &kp DOWN_ARROW           &kp LEFT_ARROW    &kp RIGHT_ARROW       &kp PAGE_UP     &kp LEFT_SHIFT
         &trans          &kp N7          &kp N8         &kp N9        &kp COMMA           &kp GRAVE          &kp INSERT           &kp HOME                 &kp END           &kp DEL               &kp PAGE_DOWN   &to 3
-                                                       &kp LEFT_GUI  &kp TAB             &kp SPACE          &kp ENTER            &kp trans                &kp BACKSPACE
+                                                       &kp LEFT_GUI  &kp TAB             &kp SPACE          &kp ENTER            &trans                   &kp BACKSPACE
                         >;
                 };
 
