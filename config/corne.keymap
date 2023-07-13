@@ -45,10 +45,10 @@ keymap {
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-        &kp ESCAPE    &kp MINUS     &kp GT        &kp DLLR      &kp DOLLAR             &kp Q         &kp V         &kp Z         &kp Y    &kp J   &kp K     &to 2
-        &to 1         &kp R         &kp N         &kp L         &kp O                  &kp E         &kp T         &kp A         &kp I    &kp S   &kp H     &kp ENTER
-        &kp X         &kp W         &kp B         &kp P         &kp M                  &kp C         &kp D         &kp U         &kp F    &kp G   &kp TAB   &kp FSLH
-                                    &kp LBKT      &kp LEFT_GUI  &mt LEFT_GUI SPACE     &kp LSHFT     &kp BACKSPACE &kp RBKT
+        &kp ESCAPE      &kp MINUS       &kp GT         &kp DLLR      &kp DOLLAR          &kp Q               &kp V                &kp Z           &kp Y             &kp J                 &kp K           &to 2
+        &to 1           &kp R           &kp N          &kp L         &kp O               &kp E               &kp T                &kp A           &kp I             &kp S                 &kp H           &kp ENTER
+        &kp X           &kp W           &kp B          &kp P         &kp M               &kp C               &kp D                &kp U           &kp F             &kp G                 &kp TAB         &kp FSLH
+                                                       &kp LBKT      &kp LEFT_GUI        &mt LEFT_GUI SPACE  &kp LSHFT            &kp BACKSPACE   &mt RCTRL RBKT
                         >;
                 };
 
