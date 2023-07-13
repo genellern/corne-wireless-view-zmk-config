@@ -45,10 +45,10 @@ keymap {
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-        &kp ESCAPE      &kp MINUS       &kp GT         &kp DLLR      &kp DOLLAR          &kp Q               &kp V                &kp Z           &kp Y             &kp J                 &kp K           &to 2
-        &to 1           &kp R           &kp N          &kp L         &kp O               &kp E               &kp T                &kp A           &kp I             &kp S                 &kp H           &kp ENTER
-        &kp X           &kp W           &kp B          &kp P         &kp M               &kp C               &kp D                &kp U           &kp F             &kp G                 &kp TAB         &kp FSLH
-                                                       &kp LBKT      &kp LEFT_GUI        &mt LEFT_GUI SPACE  &kp LSHFT            &kp BACKSPACE   &mt RCTRL RBKT
+        &kp ESCAPE      &kp MINUS       &kp GT         &kp DLLR      &kp DOLLAR          &kp Q               &kp V                &kp Z                   &kp Y             &kp J                 &kp K           &to 2
+        &to 1           &kp R           &kp N          &kp L         &kp O               &kp E               &kp T                &kp A                   &kp I             &kp S                 &kp H           &kp ENTER
+        &kp X           &kp W           &kp B          &kp P         &kp M               &kp C               &kp D                &kp U                   &kp F             &kp G                 &kp TAB         &kp FSLH
+                                                       &kp LBKT      &kp LEFT_GUI        &mt LEFT_GUI SPACE  &kp LSHFT            &mt RALT BACKSPACE      &mt RCTRL RBKT
                         >;
                 };
 
@@ -57,28 +57,28 @@ keymap {
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
 //   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
                         bindings = <
-        &trans  &kp N1    &kp N2        &kp N3   &kp DOT     &kp AMPS    &trans         &kp MINUS       &kp STAR        &kp FSLH         &kp PIPE        &to 2
-        &to 0   &kp N4    &kp N5        &kp N6   &kp N0      &kp TILDE   &kp UP_ARROW   &kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP     &kp LEFT_SHIFT
-        &trans  &kp N7    &kp N8        &kp N9   &kp COMMA   &kp GRAVE   &kp INSERT     &kp HOME        &kp END         &kp DEL          &kp PAGE_DOWN   &to 3
-                          &kp LEFT_GUI  &kp TAB  &kp SPACE   &kp ENTER   &kp RALT       &kp BACKSPACE
+        &trans          &kp N1          &kp N2         &kp N3        &kp DOT             &kp AMPS           &trans               &kp MINUS                &kp STAR          &kp FSLH              &kp PIPE        &to 2
+        &to 0           &kp N4          &kp N5         &kp N6        &kp N0              &kp TILDE          &kp UP_ARROW         &kp DOWN_ARROW           &kp LEFT_ARROW    &kp RIGHT_ARROW       &kp PAGE_UP     &kp LEFT_SHIFT
+        &trans          &kp N7          &kp N8         &kp N9        &kp COMMA           &kp GRAVE          &kp INSERT           &kp HOME                 &kp END           &kp DEL               &kp PAGE_DOWN   &to 3
+                                                       &kp LEFT_GUI  &kp TAB             &kp SPACE          &kp ENTER            &kp trans                &kp BACKSPACE
                         >;
                 };
 
                 media_layer {
                         bindings = <
-        &trans        &kp F1     &kp F2         &kp F3          &kp F4          &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp K_MUTE    &kp K_PLAY_PAUSE  &kp GRAVE  &kp LCTRL       &to 1
-        &mo 0         &kp F5     &kp F6         &kp F7          &kp F8          &kp C_PREVIOUS     &kp C_NEXT        &kp LBRC      &kp RBRC          &kp PIPE   &kp TILDE       &trans
-        &kp LSHFT     &kp F9     &kp F10        &kp F11         &kp F12         &trans             &trans            &trans        &trans            &trans     &trans          &trans
-                                 &kp SPACE      &kp ENTER       &kp LCTRL       &kp LEFT_GUI       &trans            &trans
+        &trans          &kp F1          &kp F2         &kp F3        &kp F4              &kp K_VOLUME_DOWN  &kp K_VOLUME_UP      &kp K_MUTE      &kp K_PLAY_PAUSE  &kp GRAVE             &kp LCTRL       &to 1
+        &mo 0           &kp F5          &kp F6         &kp F7        &kp F8              &kp C_PREVIOUS     &kp C_NEXT           &kp LBRC        &kp RBRC          &kp PIPE              &kp TILDE       &trans
+        &kp LSHFT       &kp F9          &kp F10        &kp F11       &kp F12             &trans             &trans               &trans          &trans            &trans                &trans          &trans
+                                                       &kp SPACE     &kp ENTER           &kp LCTRL          &kp LEFT_GUI         &trans          &trans
                         >;
                 };
 
                 reset_layer {
                         bindings = <
-        &trans        &kp F1     &kp F2         &kp F3          &kp F4          &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp K_MUTE    &kp K_PLAY_PAUSE  &kp GRAVE  &kp LCTRL       &to 1
-        &mo 0         &kp F5     &kp F6         &kp F7          &kp F8          &kp C_PREVIOUS     &kp K_NEXT        &kp LBRC      &kp RBRC          &kp PIPE   &kp TILDE       &trans
-        &kp LSHFT     &kp F9     &kp F10        &kp F11         &kp F12         &trans             &trans            &trans        &trans            &trans     &trans          &trans
-                                 &kp SPACE      &kp ENTER       &kp LCTRL       &kp LEFT_GUI       &trans            &bootloader
+        &trans          &kp F1          &kp F2         &kp F3        &kp F4              &kp K_VOLUME_DOWN  &bt BT_CLR           &bt BT_PRV      &bt BT_NXT        &kp GRAVE             &kp LCTRL       &to 1
+        &mo 0           &kp F5          &kp F6         &kp F7        &kp F8              &kp C_PREVIOUS     &bt BT_SEL 0         &bt BT_SEL 1    &bt BT_SEL 2      &kp PIPE              &kp TILDE       &trans
+        &kp LSHFT       &kp F9          &kp F10        &kp F11       &kp F12             &trans             &trans               &trans          &trans            &trans                &trans          &trans
+                                                       &kp SPACE     &kp ENTER           &kp LCTRL          &kp LEFT_GUI         &trans          &bootloader
                         >;
                 };
         };
