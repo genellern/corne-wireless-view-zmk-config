@@ -45,7 +45,7 @@
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-        &kp ESCAPE      &mt MINUS N1    &kp GT  N2     &kp DLLR  N3       &kp DOLLAR    DOT         &kp Q        AMPS       &kp V                &kp Z                   &kp Y       STAR         &kp J   FSLH          &kp K     PIPE         &to 2
+        &kp ESCAPE      &mt MINUS N1    &mt GT  N2     &mt DLLR  N3       &mt DOLLAR    DOT         &mt Q        AMPS       &kp V                &kp Z                   &mt Y       STAR         &mt J   FSLH          &mt K     PIPE         &to 2
         &to 1           &mt R     N4    &mt N   N5     &mt L     N6       &mt O         N0          &mt E        TILDE      &mt T     UP_ARROW   &mt A    DOWN_ARROW     &mt I       LEFT_ARROW   &mt S   RIGHT_ARROW   &mt H     PAGE_UP      &mt LSHFT  ENTER
         &kp X           &mt W     N7    &mt B   N8     &mt P     N9       &mt M         COMMA       &mt C        GRAVE      &mt D     INSERT     &mt U    HOME           &mt F       END          &mt G   DEL           &mt TAB   PAGE_DOWN    &kp FSLH
                                                        &mt LBKT LCTRL     &kp LEFT_GUI              &mt LEFT_GUI SPACE      &kp LSHFT            &mt RALT BACKSPACE      &mt RCTRL   RBKT
