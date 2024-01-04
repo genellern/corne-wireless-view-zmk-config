@@ -45,13 +45,21 @@
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-        &kp ESCAPE      &mt MINUS N1    &mt GT  N2     &mt DLLR  N3       &mt DOLLAR    DOT         &mt Q        AMPS       &kp V                &kp Z                   &mt Y       STAR         &mt J   FSLH          &mt K     PIPE         &to 2
-        &to 1           &mt R     N4    &mt N   N5     &mt L     N6       &mt O         N0          &mt E        TILDE      &mt T     UP_ARROW   &mt A    DOWN_ARROW     &mt I       LEFT_ARROW   &mt S   RIGHT_ARROW   &mt H     PAGE_UP      &mt LSHFT  ENTER
-        &kp X           &mt W     N7    &mt B   N8     &mt P     N9       &mt M         COMMA       &mt C        GRAVE      &mt D     INSERT     &mt U    HOME           &mt F       END          &mt G   DEL           &mt TAB   PAGE_DOWN    &kp FSLH
-                                                       &mt LBKT LCTRL     &kp LEFT_GUI              &mt LEFT_GUI SPACE      &kp LSHFT            &mt RALT BACKSPACE      &mt RCTRL   RBKT
+        &kp ESCAPE      &mt N1  MINUS    &mt N2   GT     &mt N3    DLLR     &mt DOT       DOLLAR      &mt AMPS   Q            &kp V                &kp             Z              &mt STAR         Y         &mt FSLH          J     &mt PIPE        K        &to 2
+        &to 1           &mt N4  R        &mt N5   N      &mt N6    L        &mt N0        O           &mt TILDE  E            &mt UP_ARROW   T     &mt DOWN_ARROW  A              &mt LEFT_ARROW   I         &mt RIGHT_ARROW   S     &mt PAGE_UP     H        &mt LSHFT  ENTER
+        &lt NAV X           &mt N7  W        &mt N8   B      &mt N9    P        &mt COMMA     M           &mt GRAVE  C            &mt INSERT     D     &mt HOME        U              &mt END          F         &mt DEL           G     &mt PAGE_DOWN   TAB      &kp FSLH
+                                                         &mt LCTRL LBKT     &kp LEFT_GUI              &mt LEFT_GUI SPACE      &kp LSHFT            &mt RALT        BACKSPACE      &mt RCTRL        RBKT
                         >;
                 };
 
+                nav_layer {
+                        bindings = <
+        &trans          &kp N1          &kp N2         &kp N3        &kp DOT             &kp AMPS           &trans               &kp MINUS                &kp STAR          &kp FSLH              &kp PIPE        &to 2
+        &to 0           &kp N4          &kp N5         &kp N6        &kp N0              &kp TILDE          &kp UP_ARROW         &kp DOWN_ARROW           &kp LEFT_ARROW    &kp RIGHT_ARROW       &kp PAGE_UP     &kp LEFT_SHIFT
+        &trans          &kp N7          &kp N8         &kp N9        &kp COMMA           &kp GRAVE          &kp INSERT           &kp HOME                 &kp END           &kp DEL               &kp PAGE_DOWN   &to 3
+                                                       &kp LEFT_GUI  &kp TAB             &kp SPACE          &kp ENTER            &trans                   &kp BACKSPACE
+                        >;
+                };
 
                 media_layer {
                         bindings = <
