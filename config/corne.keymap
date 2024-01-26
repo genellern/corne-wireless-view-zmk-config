@@ -18,6 +18,18 @@
 };
 
 / {
+
+        behaviors {
+                skq: sticky_key_quick_release {
+                        compatible = "zmk,behavior-sticky-key";
+                        #binding-cells = <1>;
+                        bindings = <&kp>;
+                        release-after-ms = <1000>;
+                        quick-release;
+                        ignore-modifiers;
+                };
+        };
+
         macros {
                 this_macro: this_macro {
                         label = "this_macro";
@@ -27,8 +39,16 @@
                         #binding-cells = <0>;
                         bindings = <&kp DOLLAR &kp T &kp H &kp I &kp S &kp KP_MINUS &kp GT>;
                 };
-        };
 
+                eol_nl_macro: eol_nl_macro {
+                        label = "eol_nl_macro";
+                        compatible = "zmk,behavior-macro";
+                        tap-ms = <1>;
+                        wait-ms = <1>;
+                        #binding-cells = <0>;
+                        bindings = <&kp END &kp SEMICOLON &kp RETURN>;
+                };
+        };
 
         combos {
                 compatible = "zmk,combos";
@@ -37,6 +57,25 @@
                         key-positions = <8 9>;
                         bindings = <&kp ESC>;
                 };
+
+                eol_nl {
+                        timeout-ms = <50>;
+                        key-positions = <7 8>;
+                        bindings = <&eol_nl_macro>;
+                };
+
+                next_page {
+                        timeout-ms = <50>;
+                        key-positions = <19 20>;
+                        bindings = <&kp LC(PAGE_UP)>;
+                };
+
+                prev_page {
+                        timeout-ms = <50>;
+                        key-positions = <31 32>;
+                        bindings = <&kp LC(PAGE_DOWN)>;
+                };
+
 
                 this_combo {
                         timeout-ms = <50>;
@@ -50,7 +89,7 @@
                 default_layer {
                         bindings = <
         &kp ESCAPE      &mt N1  MINUS    &mt N2   GT     &mt N3    DLLR     &mt DOT       DOLLAR      &mt AMPS   Q            &kp V                &kp             Z              &mt STAR         Y         &mt FSLH          J     &mt PIPE        K        &to 2
-        &to NAV         &mt N4  R        &mt N5   N      &mt N6    L        &mt N0        O           &mt TILDE  E            &mt UP_ARROW   T     &mt DOWN_ARROW  A              &mt LEFT_ARROW   I         &mt RIGHT_ARROW   S     &mt PAGE_UP     H        &mt LSHFT  ENTER
+        &kp LEFT_ALT    &mt N4  R        &mt N5   N      &mt N6    L        &mt N0        O           &mt TILDE  E            &mt UP_ARROW   T     &mt DOWN_ARROW  A              &mt LEFT_ARROW   I         &mt RIGHT_ARROW   S     &mt PAGE_UP     H        &mt LSHFT  ENTER
         &lt NAV X       &mt N7  W        &mt N8   B      &mt N9    P        &mt COMMA     M           &mt GRAVE  C            &mt INSERT     D     &mt HOME        U              &mt END          F         &mt DEL           G     &mt PAGE_DOWN   TAB      &kp FSLH
                                                          &mt LCTRL LBKT     &kp LEFT_GUI              &mt LEFT_GUI SPACE      &kp LSHFT            &mt RALT        BACKSPACE      &mt RCTRL        RBKT
                         >;
@@ -58,10 +97,10 @@
 
                 nav_layer {
                         bindings = <
-        &trans          &kp N1          &kp N2         &kp N3        &kp DOT             &kp AMPS           &trans               &kp MINUS                &kp STAR          &kp FSLH              &kp PIPE        &to 2
-        &to CHA         &kp N4          &kp N5         &kp N6        &kp N0              &kp TILDE          &kp UP_ARROW         &kp DOWN_ARROW           &kp LEFT_ARROW    &kp RIGHT_ARROW       &kp PAGE_UP     &kp LEFT_SHIFT
-        &trans          &kp N7          &kp N8         &kp N9        &kp COMMA           &kp GRAVE          &kp INSERT           &kp HOME                 &kp END           &kp DEL               &kp PAGE_DOWN   &to 3
-                                                       &kp LEFT_GUI  &kp TAB             &kp SPACE          &kp ENTER            &trans                   &kp BACKSPACE
+        &trans          &kp N1           &kp N2          &kp N3             &kp DOT                   &kp AMPS               &trans               &kp MINUS                       &kp STAR                   &kp FSLH               &kp PIPE                  &to 2
+        &to CHA         &kp N4           &kp N5          &kp N6             &kp N0                    &kp TILDE              &kp UP_ARROW         &kp DOWN_ARROW                  &kp LEFT_ARROW             &kp RIGHT_ARROW        &kp PAGE_UP               &kp LEFT_SHIFT
+        &trans          &kp N7           &kp N8          &kp N9             &kp COMMA                 &kp GRAVE              &kp INSERT           &kp HOME                        &kp END                    &kp DEL                &kp PAGE_DOWN             &to 3
+                                                         &kp LEFT_GUI       &kp TAB                   &kp SPACE              &kp ENTER            &trans                          &kp BACKSPACE
                         >;
                 };
 
