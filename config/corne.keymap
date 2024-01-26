@@ -58,22 +58,16 @@
                         bindings = <&kp ESC>;
                 };
 
-                eol_nl {
-                        timeout-ms = <50>;
-                        key-positions = <7 8>;
-                        bindings = <&eol_nl_macro>;
-                };
-
                 next_page {
                         timeout-ms = <50>;
                         key-positions = <19 20>;
-                        bindings = <&kp LC(PAGE_UP)>;
+                        bindings = < &kp LC(PAGE_UP) >;
                 };
 
                 prev_page {
                         timeout-ms = <50>;
                         key-positions = <31 32>;
-                        bindings = <&kp LC(PAGE_DOWN)>;
+                        bindings = < &kp LC(PAGE_DOWN) >;
                 };
 
 
