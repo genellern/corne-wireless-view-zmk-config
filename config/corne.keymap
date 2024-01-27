@@ -61,13 +61,13 @@
                 next_page {
                         timeout-ms = <50>;
                         key-positions = <19 20>;
-                        bindings = <&kp LCTRL(PAGE_UP)>;
+                        bindings = <&kp LC(PAGE_UP)>;
                 };
 
                 prev_page {
                         timeout-ms = <50>;
                         key-positions = <31 32>;
-                        bindings = <&kp LCTRL(PAGE_DOWN)>;
+                        bindings = <&kp LC(PAGE_DOWN)>;
                 };
 
 
