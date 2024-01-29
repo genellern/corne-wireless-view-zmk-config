@@ -88,9 +88,9 @@
                 compatible = "zmk,keymap";
                 default_layer {
                         bindings = <
-        &kp ESCAPE      &mt N1  MINUS    &mt N2   GT     &mt N3    DLLR     &mt DOT       DOLLAR      &mt AMPS   Q            &kp V                &kp             Z              &mt STAR         Y         &mt FSLH          J     &mt PIPE        K        &to 2
-        &kp LEFT_ALT    &mt N4  R        &mt N5   N      &mt N6    L        &mt N0        O           &mt TILDE  E            &mt UP_ARROW   T     &mt DOWN_ARROW  A              &mt LEFT_ARROW   I         &mt RIGHT_ARROW   S     &mt PAGE_UP     H        &mt LSHFT  ENTER
-        &lt NAV X       &mt N7  W        &mt N8   B      &mt N9    P        &mt COMMA     M           &mt GRAVE  C            &mt INSERT     D     &mt HOME        U              &mt END          F         &mt DEL           G     &mt PAGE_DOWN   TAB      &kp FSLH
+        &kp ESCAPE             &mt N1  MINUS    &mt N2   GT     &mt N3    DLLR     &mt DOT       DOLLAR      &mt AMPS   Q            &kp V                &kp             Z              &mt STAR         Y         &mt FSLH          J     &mt PIPE        K        &to 2
+        &lt LEFT_ALT to(NAV)   &mt N4  R        &mt N5   N      &mt N6    L        &mt N0        O           &mt TILDE  E            &mt UP_ARROW   T     &mt DOWN_ARROW  A              &mt LEFT_ARROW   I         &mt RIGHT_ARROW   S     &mt PAGE_UP     H        &mt LSHFT  ENTER
+        &lt NAV X              &mt N7  W        &mt N8   B      &mt N9    P        &mt COMMA     M           &mt GRAVE  C            &mt INSERT     D     &mt HOME        U              &mt END          F         &mt DEL           G     &mt PAGE_DOWN   TAB      &kp FSLH
                                                          &mt LCTRL LBKT     &kp LEFT_GUI              &mt LEFT_GUI SPACE      &kp LSHFT            &mt RALT        BACKSPACE      &mt RCTRL        RBKT
                         >;
                 };
